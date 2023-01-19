@@ -1,0 +1,16 @@
+####### Task 1: Create service objects #######
+
+apiVersion: v1
+kind: Pod
+metadata:
+  name: nginx
+  namespace: lab2
+  labels:
+    app.kubernetes.io/name: proxy
+spec:
+  containers:
+  - name: nginx
+    image: nginx:stable
+    ports:
+      - containerPort: 80
+        name: http-web-svc
