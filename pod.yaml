@@ -1,5 +1,3 @@
-############### LAB 1 ##########################
-
 #######Task 3: Creating a Pod using yaml file definition #######
 
 apiVersion: v1
