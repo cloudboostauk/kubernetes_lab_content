@@ -15,19 +15,19 @@ spec:
       value: "DEBUG"
     - name: AUTHOR
       value: "Pod"
-+   startupProbe:
-+     httpGet:
-+       path: /author
-+       port: 9900
-+     failureThreshold: 30
-+     periodSeconds: 10
-+   readinessProbe:
-+     tcpSocket:
-+       port: 9900
-+     initialDelaySeconds: 5
-+     periodSeconds: 10
-+   livenessProbe:
-+     tcpSocket:
-+       port: 9900
-+     initialDelaySeconds: 15
-+     periodSeconds: 20
+    startupProbe:
+      httpGet:
+        path: /author
+        port: 9900
+      failureThreshold: 30
+      periodSeconds: 10
+    readinessProbe:
+      tcpSocket:
+        port: 9900
+      initialDelaySeconds: 5
+      periodSeconds: 10
+    livenessProbe:
+      tcpSocket:
+        port: 9900
+      initialDelaySeconds: 15
+      periodSeconds: 20

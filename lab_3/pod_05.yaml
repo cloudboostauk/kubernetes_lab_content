@@ -5,10 +5,10 @@ kind: Pod
 metadata:
   name: my-flask-app
 spec:
-+ initContainers:
-+ - name: init-sleepy
-+   image: busybox:1.28
-+   command: ['sh', '-c', 'echo "Initializing...waiting for a minute." && sleep 30s;']
+  initContainers:
+  - name: init-sleepy
+    image: busybox:1.28
+    command: ['sh', '-c', 'echo "Initializing...waiting for a minute." && sleep 30s;']
   containers:
   - name: my-flask-app
     image: ghcr.io/emmanuelogiji/cloudboosta-flask-app:0.2.0
