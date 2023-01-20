@@ -10,9 +10,9 @@ spec:
     image: ghcr.io/emmanuelogiji/cloudboosta-flask-app:0.2.0
     ports:
     - containerPort: 9900
-+   env:
-+   - name: LOG_LEVEL
-+     value: "DEBUG"
-+   - name: AUTHOR
-+     value: "Pod"
+    env:
+    - name: LOG_LEVEL
+      value: "DEBUG"
+    - name: AUTHOR
+      value: "Pod"
 
